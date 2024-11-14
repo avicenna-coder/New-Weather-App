@@ -5,6 +5,15 @@
     color:white;
 }
 
+body{
+    background-image: url("https://i.im.ge/2024/10/29/kWRZB9.bg-weather.png");
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 img{
     max-width: 100%;
     height: auto;
@@ -12,7 +21,7 @@ img{
 .background-image{
     background-image: url("https://i.im.ge/2024/10/29/kWRZB9.bg-weather.png");
     width:100%;
-    height:100vh;
+    height:auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -330,9 +339,9 @@ hr{
     height:auto;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
 }
 
 .celsius-detail-humidity{
@@ -340,9 +349,9 @@ hr{
     height:auto;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
 }
 
 .celsius-detail-cloudy{
@@ -350,7 +359,7 @@ hr{
     height:auto;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
     column-gap: 1.5rem;
 }
@@ -360,9 +369,9 @@ hr{
     height:auto;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
 }
 
 .celsius-detail2{
@@ -370,9 +379,9 @@ hr{
     height:auto;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     align-items: start;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
 }
 
 .celsius{
@@ -425,30 +434,27 @@ hr{
     height:auto;
 }
 
-.detail-icon2{
-    width:fit-content;
+.detail-icon2 i{
+    width:100%;
     height:auto;
     
 }
 
+/* Humidity Icon Styling */
 .detail-humidity{
-    width:30px;
+    width:25px;
     height:auto;
-    
 }
 
 .detail-humidity img{
     width: 100%;
     height:auto;
-    padding: 0;
 }
-/* Cloudy Icon */
+/* Cloudy Icon Styling*/
 
 .detail-cloudy{
-    width:25px;
+    width:23px;
     height:auto;
-    margin-left: 0.5rem;
-
 }
 .detail-cloudy img{
     width:100%;
@@ -456,21 +462,32 @@ hr{
 }
 
 .detail-icon i{
-    font-size: 1.5rem;
+    font-size: 25px;
     width: 100%;
     height:auto;
 }
 
 .detail-icon2 i{
-    font-size: 1.5rem;
+    font-size: 25px;
     width: 100%;
     height:auto;
+}
+
+/* Icon Wind Styling */
+.detail-icon-wind{
+    width: fit-content;
+    height:auto;
+}
+
+.detail-icon-wind i{
+    font-size: 20px;
+    color: #e4e0dd;
 }
 
 
 
 .cloudy{
-    width:15%;
+    width:fit-content;
     height:auto;
 }
 
@@ -483,7 +500,29 @@ h4{
     color:#e0e0e0;
 }
 
+@media only screen and (width: 783px){
+    .right-container{
+        width: 100%;
+    }
 
+    .background-image{
+      z-index: 100;  
+    }
+
+    .transform-heading{
+        width: 100%;
+    }
+}
+
+@media only screen and (width: 795px){
+    .right-container{
+        width: 100%;
+    }
+
+    .background-image{
+      z-index: 100;  
+    }
+}
 
  @media only screen and (min-width: 300px) and (max-width:400px ){
     .main-container {
@@ -520,7 +559,8 @@ h4{
     .right-container {
         width:100%;
         height:auto;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
+        padding-top: 1rem;
     }
 
     .WW-icon{
@@ -619,11 +659,36 @@ h4{
         font-size: 1.3rem;
     }
     
+
     .detail-cloudy{
-        width:30px;
+        width:20px;
         height:auto;
     }
-     
+
+    .detail-icon-wind i{
+        font-size: 20px;
+        color: #e4e0dd;
+    }
+
+    .left-detail{
+        font-size: 1rem;
+    }
+    
+    .left-detail2{
+        font-size: 1rem;
+    }
+
+    .humidity-text{
+        font-size: 1rem;
+    }
+
+    .heading-cloudy{
+        font-size: 1rem;
+    }
+
+    .heading-wind{
+        font-size: 1rem;
+    }
 }
 
 @media only screen and (width: 360px){
@@ -668,7 +733,7 @@ h4{
     }
 
     .detail-cloudy{
-        width:30px;
+        width:25px;
         height:auto;
         margin-left: 0.2rem;
     }
@@ -686,8 +751,13 @@ h4{
         width:50%;
         
     }
-}
 
+    .detail-icon-wind i{
+        font-size: 23px;
+        color: #e4e0dd;
+    }
+    
+}
 
 @media only screen and (min-width: 401px) and (max-width:780px ){
     .main-container {
@@ -797,10 +867,33 @@ h4{
 
 }
 
+@media only screen and (width: 540px){
+    .left-container {
+        padding: 1rem ;
+        text-align: center;
+        height: auto;
+        justify-content: space-between;
+        row-gap: 1rem;
+    }
+
+    .temperature-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.5rem;
+        margin-top: 4rem;
+    }
+
+    .transform-heading h3{
+        font-size: 1.5rem;
+    }
+}
 
 @media only screen and (width: 768px) {
     .right-container{
         padding-left: 2rem;
+        padding-right: 1rem;
     }
     .celsius-converter h1{
         font-size: 9rem;
@@ -877,7 +970,7 @@ h4{
     }
 
     .detail-icon i{
-        font-size: 40px;
+        font-size: 30px;
         width: 100%;
         height:auto;
     }
@@ -889,17 +982,24 @@ h4{
     }
 
     .detail-cloudy{
+        width:35px;
+        height:auto;
+    }
+
+    .detail-humidity{
         width:40px;
         height:auto;
+        
     }
-
+    
     .detail-humidity img{
-        width:30px;
+        width: 100%;
         height:auto;
+        padding: 0;
     }
 
-    .detail-icon-wind img{
-        width:35px;
+    .detail-icon-wind i{
+        font-size: 30px;
         height:auto;
     }
 
@@ -943,6 +1043,11 @@ h4{
             width: 100%;
             height: auto;
             margin-top: 5rem;
+        }
+
+        svg{
+            position: absolute;
+            top: 2.3rem;
         }
 
         .country-date{
@@ -1065,32 +1170,40 @@ h4{
         }
     
         .detail-icon i{
-            font-size: 40px;
+            font-size: 35px;
             width: 100%;
             height:auto;
         }
         
         .detail-icon2 i{
-            font-size: 40px;
+            font-size: 35px;
             width: 100%;
             height:auto;
         }
     
         .detail-cloudy{
-            width:40px;
+            width:35px;
             height:auto;
-            margin-left: 0.8rem;
         }
     
         .detail-humidity img{
-            width:30px;
+            width:35px;
+            height:auto;
+        }
+
+        .detail-humidity{
+            width:35px;
+            height:auto;
+        }
+        
+        .detail-humidity img{
+            width: 100%;
             height:auto;
         }
     
-        .detail-icon-wind img{
-            width:35px;
+        .detail-icon-wind i{
+            font-size: 30px;
             height:auto;
-            margin-left: 0.5rem;
         }
 
   }
@@ -1100,9 +1213,8 @@ h4{
         width:100%;
         height:auto;
         height:100vh;
-        padding: 1.1rem;
+        padding: 1.3rem;
         row-gap: 0;
-        
     }
 
     .left-container {
@@ -1121,7 +1233,7 @@ h4{
 
     .transform-details{
         height:auto;
-        row-gap: 1rem;
+        row-gap: 2rem;
         padding-top: 2rem;
   }
 
@@ -1184,7 +1296,7 @@ h4{
     }
 
     .detail-cloudy{
-        width:60px;
+        width:30px;
         height:auto;
     }
 
@@ -1301,7 +1413,6 @@ h4{
     .detail-cloudy{
         width:40px;
         height:auto;
-        margin-left: 0.5rem;
     }
 
     .detail-cloudy img{
@@ -1309,14 +1420,17 @@ h4{
         height: auto;
     }
 
+    .detail-humidity{
+        width:35px;
+        height:auto;
+    }
     .detail-humidity img{
-        width:30px;
+        width:100%;
         height:auto;
     }
 
-    .detail-icon-wind img{
-        width:40px;
-        height:auto;
+    .detail-icon-wind i{
+       font-size: 30px;
     }
 
     .left-detail{
@@ -1353,6 +1467,20 @@ h4{
 
     .celsius-converter h1{
         font-size: 9.5rem;
+    }
+  }
+  @media only screen and (width: 853px){
+    .transform-heading{
+        width: 100%;
+        height:auto;
+    }
+
+    .transform-heading h3{
+        font-size: 2.3rem;
+    }
+
+    .weather-details p{
+        font-size: 1.7rem;
     }
   }
 

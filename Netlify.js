@@ -277,8 +277,8 @@ function weatherDetails5(dataValue){
     detailIcon2.classList.add("detail-icon-wind");
     let faTemperature2 = document.createElement("i");
     faTemperature2.classList.add("fa-solid", "fa-wind")
-    faTemperature2.style.color = `#ffffff`
-    faTemperature2.style.fontSize = `25px`
+    // faTemperature2.style.color = `#ffffff`
+    // faTemperature2.style.fontSize = `25px`
     let itemDetails = document.createElement("div")
     itemDetails.classList.add("wind-detail")
 
