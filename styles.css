@@ -564,15 +564,17 @@ h4{
     }
 
     .WW-icon{
-
+        /* background-color: red; */
+        width:18%;
+        
     }
 
     .WW-icon svg{
-        width:50%;
+        width:100%;
     }
 
     .search{
-        position: fixed;
+        position: absolute;
         top:1rem;
         right: 0.5rem;
         width:50%;
