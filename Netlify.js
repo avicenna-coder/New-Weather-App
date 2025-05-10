@@ -11,11 +11,11 @@ let transformDetails = document.getElementById("transform-details")
 let bgImageContainer = document.getElementById("background-image")
 let mainContainer = document.getElementById("main-container")
 let imageArray = [
-    'https://i.im.ge/2024/10/29/kRbTU1.cold1.jpeg',
-    'https://i.im.ge/2024/10/29/kRbutW.cold2.jpeg',
-    'https://i.im.ge/2024/10/29/kRb1OT.cold3.jpeg',
-    'https://i.im.ge/2024/10/29/kRbsUx.Not-too-cold.jpeg',
-    'https://i.im.ge/2024/10/29/kRb74J.rain1.jpeg',
+    'https://i.imgur.com/K3xDTK3.jpeg',
+    'https://i.imgur.com/6bA9psf.jpeg',
+    'https://i.imgur.com/OkJaVnC.jpeg',
+    'https://i.imgur.com/Ik2v0OY.jpeg',
+    'https://i.im.ge/2024/10/29/kRb0mF.sun1.jpeg', // Duplicate, optional to keep
     'https://i.im.ge/2024/10/29/kRb0mF.sun1.jpeg'
 ];
 
